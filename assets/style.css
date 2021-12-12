@@ -41,8 +41,7 @@ a {
   background-color: #5a48f9 ;
   margin-top: 2rem;
   padding: 1rem 4rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   overflow-y: auto;
 }
 
@@ -51,5 +50,15 @@ a {
 }
 
 .footer {
+  margin-top: 20px;
+  padding: 5px 0;
   text-align: center;
+  color: white;
+  background-color:  #5a48f9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer span {
+  padding: 0 4px;
 }
