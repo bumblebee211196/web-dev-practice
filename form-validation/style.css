@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303dde;
+}
+
+.form-validation {
+  width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #1deceb;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px black;
+}
+
+.form-validation > form {
+  margin-top: 20px;
+}
+
+.form-validation > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.form-element {
+  margin: 1rem 0;
+}
+
+.form-element > label {
+  font-size: 1.5rem;
+}
+
+.form-element > input, .form-element > button {
+  display: block;
+  margin-top: 8px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form-element > input:focus {
+  outline: none;
+}
+
+.form-element > input:focus:invalid {
+  border: 2px solid red;
+}
+
+.form-element > input:focus:valid, .form-element > input:valid {
+  border: 2px solid darkgreen;
+}
+
+.form-element > button { 
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  margin-top: 10px;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.form-element > button:hover { 
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-element > .error {
+  display: none;
+}
+
+.form-element > .error.active {
+  display: block;
+  color: white;
+  background-color: #ff6767;
+  margin-top: 4px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.form-submit {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.form-submit > h3 {
+  text-align: center;
+}

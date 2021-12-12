@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="form-validation">
+            <h1>Simple Form Validation</h1>
+            <form novalidate>
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required minlength="8">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-element">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-element">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-submit">
+            <h3>Your form submit result goes here</h3>
+        </div>
+    </body>
+</html>
